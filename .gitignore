@@ -1,3 +1,13 @@
 .idea
 **/node_modules/*
 .cache
+.config/configstore
+**/.firebaserc
+.runtimeconfig.json
+.firebase/
+replit.db
+replit-code-runner
+replit-code-runner-*
+replit.nix
+replit.nix-*
+.replit
