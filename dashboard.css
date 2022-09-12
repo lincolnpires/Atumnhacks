@@ -1,0 +1,199 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+.logo {
+    position: absolute;
+    width: 45px;
+    height: 65px;
+    left: 98px;
+    top: 50px;  
+}
+.john {
+    position: absolute;
+    width: 112.5px;
+    height: 112.5px;
+    left: 249px;
+    top: 138px;  
+}
+h1 {
+    position: absolute;
+width: 180px;
+height: 52px;
+left: 379px;
+top: 184px;
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 45px;
+display: flex;
+align-items: center;
+color: #000000;
+z-index:10;
+}
+.box {
+    position: absolute;
+    width: 80px;
+    height: 40px;
+    left: 457px;
+    top: 188px;
+    background: #FFFFFF;
+    box-shadow: 0px 7px 7px -1px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+}
+.targets {
+position: absolute;
+width: 764px;
+height: 85px;
+left: 255px;
+top: 264px;
+
+}
+.dothis {
+/* box-sizing: border-box;
+position: absolute; */
+/* float: right; */
+padding: 30px 30px; 
+/* margin: 50px 50px; */
+position: absolute;
+top: 22%;
+left: 75%;
+width: 264px;
+height: 279px;
+/* left: 1115px;
+top: 264px; */
+border: 3px solid #000000;
+border-radius: 15px;
+overflow: hidden;
+}
+.cross {
+    text-decoration-line: line-through;
+
+}
+.circle1 {
+position: absolute;
+width: 15px;
+height: 15px;
+left: 11px;
+top: 35px;
+border: 2px solid #000000;
+border-radius: 50%;
+}
+.circle2{
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    left: 14px;
+    top: 38px;
+    background: #5E5EE8;
+    border-radius: 50%; 
+}
+.circle3 {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: 11px;
+    top: 83px;
+    border: 2px solid #000000;
+    border-radius: 50%;
+}
+.circle4 {
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    left: 14px;
+    top: 86px;
+    background: #5E5EE8;
+    border-radius: 50%; 
+}
+.circle5 {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: 11px;
+    top: 132px;
+    border: 2px solid #000000;
+    border-radius: 50%;
+}
+.circle6 {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: 11px;
+    top: 179px;
+    border: 2px solid #000000;
+    border-radius: 50%;
+}
+.stickerdothis{
+position: absolute;
+width: 128px;
+height: 73.9px;
+top: 18%;
+left: 78%;
+z-index: 10;
+}
+.connect {
+position: absolute;
+width: 264px;
+height: 447px;
+left: 75%;
+top: 50%;
+border: 3px solid #000000;
+border-radius: 15px;
+}
+.a {
+position: absolute;
+width: 210px;
+height: 27px;
+left: 15%;
+top: 22px;
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 30px;
+display: flex;
+align-items: flex-end;
+color: #000000;
+}
+.b {
+    position: absolute;
+    width: 112px;
+    height: 29px;
+    left: 30%;
+    top: 262px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    display: flex;
+    align-items: flex-end;
+    color: #000000;   
+}
+.human1 {
+    position: absolute;
+    width: 208.1px;
+    height: 180.1px;
+    left: 10%;
+    top: 64px;
+    
+}
+.human2 {
+    position: absolute;
+    width: 208.1px;
+    height: 79.1px;
+    left: 10%;
+    top: 305px;  
+}
+.pin { 
+position: absolute;
+width: 68px;
+height: 68px;
+left: 85%;
+top: 795px;
+z-index: 10;
+}

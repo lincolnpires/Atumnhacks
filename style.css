@@ -1,0 +1,501 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    color: black;
+    font-size: 16px;
+    user-select: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+#container {
+    margin: 50px auto;
+    width: 350px;
+    height: 350px;
+    overflow: hidden;
+    text-align: center;
+    border: solid black 2px;
+    border-radius: 15px;
+  margin-left: 25%;
+}
+
+#break,
+#session {
+  float: left;
+  width: 50%;
+  font-size: 1em;
+}
+
+#break div > span:first-child,
+#break div > span:last-child,
+#session div > span:first-child,
+#session div > span:last-child  {
+    padding: 0 5px;
+    cursor: pointer;
+}
+
+#break div > span:first-child:hover,
+#break div > span:last-child:hover,
+#session div > span:first-child:hover,
+#session div > span:last-child:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#timer-setup,
+#timer-info,
+#timer-bar,
+#timer-reset {
+    float: left;
+    width: 100%;
+    margin: 10px 0;
+}
+#timer {
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+}
+
+#timer .progressbar-label {
+    color: black !important;
+    font-size: 3em;
+    z-index: 10;
+}
+
+#timer-reset {
+    cursor: pointer;
+    text-align: center;
+}
+
+#timer-reset:hover {
+    text-decoration: underline;
+} 
+
+/* HOME PAGE */
+  
+.topnav {
+  background-color: #ffffff;
+  overflow: hidden;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: right;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ededed;
+  color: #000000;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #e8e8e8;
+  color: black;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+}
+
+.topnav-left {
+  float: left;
+}
+
+.button1 {
+  background-color: #5E5EE8;
+  border: 3px solid black;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 100px;
+  margin: 40px 2px;
+  border-radius: 45px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.label {
+  font-family: 'Poppins', sans-serif;
+}
+
+p {
+  text-align: center;
+  margin-top: 0px;
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+}
+
+.rectangles .rectangle {
+    border-radius: 10px;
+    display: inline-block;
+    margin-bottom: 30px;
+    margin-right: 5px;
+    width: 350px;
+    height: 100px;
+    border: 1px solid #000;
+    background-color: white;
+    padding: 10px 10px 10px 100px;
+    position: relative;
+}
+
+.rectangles .rectangle .circle {
+  background: #aaa;
+  border: 1px solid #000;
+  border-radius: 100%;
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+input {
+  height: 60px;
+  border-radius: 50px;
+  width: 200px;
+}
+
+.middle {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
+.middle1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;
+  background: #aebaab;
+}
+
+/* Popup container */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+#wrapper {
+    width: 1000px;
+    border: 1px solid black;
+    overflow: hidden; 
+}
+#first {
+    width: 250px;
+    float:left; 
+    border: 1px solid black;
+}
+#second {
+    width: 250px;
+    border: 1px solid black;
+    overflow: hidden; 
+}
+#third {
+    width: 250px;
+    border: 1px solid black;
+    overflow: hidden; 
+}
+#fourth {
+    width: 250px;
+    float:right; 
+    border: 1px solid black;
+}
+
+th {
+  font-family: 'Poppins', sans-serif;
+  font-size: 300%;
+}
+
+td {
+  font-family: 'Poppins', sans-serif;
+  font-size: 200%;
+}
+
+th, td {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: calc((100vw - 1000px)/6);
+  padding-right: calc((100vw - 1000px)/6);
+}
+
+/* -------------- TO-DO ------------------ */
+
+
+::selection{
+  color: #ffff;
+  background: black;
+}
+/* body{
+  width: 100%;
+  height: 100vh;
+ 
+  padding: 10px;
+  background: white;
+} */
+.wrapper{
+  background: #fff;
+  max-width: 350px;
+  width: 100%;
+  margin: 270px auto;
+  margin-left: 10%;
+  padding: 25px;
+  border-radius: 15px;
+ border: black solid 2px;
+}
+.wrapper header{
+  font-size: 30px;
+  font-weight: 600;
+}
+.wrapper .inputField{
+  margin: 20px 0;
+  width: 100%;
+  display: flex;
+  height: 45px;
+}
+.inputField input{
+  width: 85%;
+  height: 100%;
+  outline: none;
+  border-radius: 3px;
+  border: 2px solid #ccc;
+  font-size: 17px;
+  padding-left: 15px;
+  transition: all 0.3s ease;
+}
+.inputField input:focus{
+  border-color: black; 
+  border: 2px black solid;
+}
+.inputField button{
+  width: 50px;
+  height: 100%;
+  border: none;
+  color: #fff;
+  margin-left: 5px;
+  font-size: 21px;
+  outline: none;
+  background: #5E5EE8;
+  cursor: pointer;
+  border-radius: 3px;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+.inputField button:hover,
+.footer button:hover{
+  background: #5E5EE8;
+}
+.inputField button.active{
+  opacity: 1;
+  pointer-events: auto;
+}
+.wrapper .todoList{
+  max-height: 250px;
+  overflow-y: auto;
+}
+.todoList li{
+  position: relative;
+  list-style: none;
+  margin-bottom: 8px;
+  border: 2px black solid; 
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: default;
+  overflow: hidden;
+  word-wrap: break-word;
+}
+.todoList li .icon{
+  position: absolute;
+  right: -45px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #5E5EE8;
+  width: 45px;
+  height: 45px; 
+  text-align: center;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.todoList li:hover .icon{
+  right: 0px;
+}
+.wrapper .footer{
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer button{
+  padding: 6px 10px;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-weight: 400;
+  font-size: 16px;
+  margin-left: 5px;
+  background: #5E5EE8;
+  cursor: pointer;
+  user-select: none;
+  opacity: 0.6;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+.footer button.active{
+  opacity: 1;
+  pointer-events: auto;
+}  
+
+
+/* Navbar */
+
+.logo {
+position: absolute;
+width: 45px;
+height: 65px;
+left: 98px;
+top: 50px;
+}
+
+.logoname {
+position: absolute;
+width: 130px;
+height: 32px;
+left: 148px;
+top: 82px;
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 30px;
+color: #000000;
+}
+
+.home {
+position: absolute;
+width: 48px;
+height: 48px;
+left: 970px;
+top: 50px;
+}
+
+.profile {
+position: absolute;
+width: 48px;
+height: 48px;
+left: 1055px;
+top: 50px;
+}
+
+.fav {
+position: absolute;
+width: 48px;
+height: 48px;
+left: 1140px;
+top: 49px;
+}
+.container-left {
+position: absolute;
+width: 180px;
+height: 65px;
+left: 5%;
+top: 50px;
+}
+
+.container-right {
+position: absolute;
+width: 355px;
+height: 49px;
+right: 75%;
+top: 50px;
+width: -moz-fit-content;
+width: fit-content;
+}
+.bottom {
+    position: absolute;
+    left: 20%;
+    top: 75%;
+    width: 1244px;
+    height: 112px;
+   
+     
+}

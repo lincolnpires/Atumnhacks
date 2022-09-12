@@ -1,0 +1,186 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+.logo {
+position: absolute;
+width: 45px;
+height: 65px;
+left: 98px;
+top: 50px;
+}
+
+.logoname {
+position: absolute;
+width: 130px;
+height: 32px;
+left: 148px;
+top: 82px;
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 30px;
+color: #000000;
+}
+
+.home {
+position: absolute;
+width: 48px;
+height: 48px;
+left: 970px;
+top: 50px;
+}
+
+.profile {
+position: absolute;
+width: 48px;
+height: 48px;
+left: 1055px;
+top: 50px;
+}
+
+.fav {
+position: absolute;
+width: 48px;
+height: 48px;
+left: 1140px;
+top: 49px;
+}
+
+.signup {
+box-sizing: border-box;
+position: absolute;
+width: 100px;
+height: 45px;
+left: 1225px;
+top: 51px;
+background: #5E5EE8;
+border: 3px solid #000000;
+border-radius: 45px;
+color: white;
+}
+
+.sigup:hover {
+    cursor: pointer;
+    width: 110px;
+    height:55px;
+    animation: pulse;
+}
+.sign {
+position: absolute;
+width: 61px;
+height: 18px;
+left: 19px;
+top: 8px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+line-height: 22px;
+color: #ffffff;
+z-index: 10;
+}
+.sign:hover {
+    cursor: pointer;
+}
+
+.create {
+width: 451px;
+height: 100px;
+position: absolute;
+left: 36%;
+top: 35%;
+background: #5E5EE8;
+border: 5px solid #000000;
+border-radius: 45px;
+padding-bottom: 2em;
+}
+
+.createroom {
+position: absolute;
+width: 330px;
+height: 67px;
+left: 60px;
+top: 14px;
+font-style: normal;
+font-weight: 500;
+font-size: 40px;
+line-height: 60px;
+color: #ffffff;
+z-index: 10;
+}
+
+.join {
+    width: 451px;
+    height: 100px;
+    position: absolute;
+    left: 36%;
+    top: 48%;
+    background: #5E5EE8;
+    border: 5px solid #000000;
+    border-radius: 45px;
+}
+
+.joinroom {
+    position: absolute;
+    width: 269px;
+    height: 67px;
+    left: 93px;
+    top: 16px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 60px;
+    color: #ffffff;
+    z-index: 10;
+}
+
+.container-left {
+position: absolute;
+width: 180px;
+height: 65px;
+left: 5%;
+top: 50px;
+}
+
+.container-right {
+position: absolute;
+width: 355px;
+height: 49px;
+right: 75%;
+top: 50px;
+width: -moz-fit-content;
+width: fit-content;
+}
+.bottom {
+    position: absolute;
+    left: 20%;
+    top: 75%;
+    width: 1244px;
+    height: 112px;
+   
+     
+}
+
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .row {
+    padding-left: 200px;
+    padding-top: 850px;
+  }
