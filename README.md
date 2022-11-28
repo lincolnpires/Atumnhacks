@@ -1,4 +1,4 @@
-# Atumnhacks
+# Atumnhacks - Winner for Best Website 
 AutumnHacks 22 (aka AtumNhacks)
 Our goal is to make studying more rewarding and at the same time being able to teach others the knowledge that we know. One of the best ways to learn and sharpen your skill is the ability to teach and re-explain the known materials. not just studying but getting into good habits. We use positive reinforcement which is every time we push ourselves into doing something that might be mundane for example homework. Once done, the reward is something exciting.
 
